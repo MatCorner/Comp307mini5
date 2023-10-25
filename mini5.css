@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    height: 100vh;
+}
+
+p {
+    font-size: 16px;
+}
+
+.header {
+    justify-content: space-between;
+    font-size: large;
+    background-color: #5DAA68;
+    color: #FAF1CF;
+    text-align: center;
+    height: 10vh;
+    line-height: 10vh;
+    width: 100%
+}
+
+
+.topnav {
+    overflow: hidden;
+    background-color: #3F6844;
+    justify-content: space-between;
+
+}
+
+/*hamburger menu container*/
+.icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+/*draw the hamburger icon*/
+.line {
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    margin-left: 2px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.menu {
+    display: flex;
+}
+
+/*topnav menu*/
+.menu a {
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    overflow: hidden;
+    float: left;
+    display: block;
+    font-size: 17px;
+    text-align: center;
+}
+
+.menu a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+/* Links - change color on hover */
+.menu a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/*hamburger menu*/
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+
+.show {
+    display: block;
+}
+
+/*12-column grid view*/
+.flex-container {
+    display: flex;
+    background-color: cadetblue;
+    flex-wrap: wrap;
+    min-height: 73.25vh;
+}
+
+/*set the grid appearance*/
+.div1,
+.div2,
+.div3,
+.div4,
+.div5 {
+    box-sizing: border-box;
+    background-color: #FFDDCC;
+    margin: 0px;
+    padding: 20px;
+    font-size: 10px;
+    color: #3F6844;
+    font-style: Times;
+}
+
+/*default text size*/
+.div1 h,
+.div2 h,
+.div3 h {
+    font-size: 30px;
+}
+
+.div4 h,
+.div5 h {
+    font-size: 30px;
+    text-align: center;
+}
+
+.div1 p,
+.div2 p,
+.div3 p {
+    font-size: 16px;
+}
+
+.div1 {
+    flex: 35%;
+}
+
+
+.div2 {
+    flex: 45%;
+}
+
+.div3 {
+    flex: 20%;
+}
+
+.div4 {
+    flex: 50%;
+}
+
+.div5 {
+    flex: 50%;
+}
+
+/* Style for desktop 
+    Everything is shown at standard size
+*/
+@media (max-width: 2160px) {
+
+    .menu {
+        display: flex;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .dropdown-menu.show {
+        display: none;
+        flex-direction: column;
+
+    }
+}
+
+/* Style for tablet 
+    For homepage hide the image in div1 cause at that size the image becomes not pretty
+    reduce the text size to fit in the page
+*/
+@media (min-width: 601px) and (max-width: 1280px) {
+    .div1 {
+        flex: 50%;
+    }
+
+    .div2 {
+        flex: 50%;
+    }
+
+    .div3 {
+        flex: 100%;
+    }
+
+    .div4 {
+        flex: 50%;
+    }
+
+    .div5 {
+        flex: 50%;
+    }
+
+    .div1 img {
+        display: none;
+    }
+
+    .div1 h,
+    .div2 h,
+    .div3 h {
+        font-size: 23px;
+
+    }
+
+    .div4 h,
+    .div5 h {
+        font-size: 23px;
+
+    }
+
+    .div1 p,
+    .div2 p,
+    .div3 p {
+        font-size: 13px;
+
+    }
+}
+
+/* Style for mobile phone 
+    hide image in the div1 and hide div3 (text and image)
+    hide image in the div4 and div5(hobby page)
+    reduce the text size
+    show hamburger menu
+*/
+@media (max-width: 600px) {
+    .div1 {
+        flex: 100%;
+    }
+
+    .div2 {
+        flex: 100%;
+    }
+
+    .div3 {
+        display: none;
+    }
+
+    .div4 {
+        flex: 100%;
+    }
+
+    .div5 {
+        flex: 100%;
+    }
+
+
+    .menu {
+        display: none;
+    }
+
+    .icon {
+        display: flex;
+    }
+
+    .dropdown-menu.show {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .div1 img,
+    .div3 img,
+    .div4 img,
+    .div5 img {
+        display: none;
+        /* Hide images in div1, div2, and div3 4 5*/
+    }
+
+
+    .div1 h,
+    .div2 h,
+    .div3 h {
+        font-size: 20px;
+    }
+
+    .div4 h,
+    .div5 h {
+        font-size: 16px;
+    }
+
+    .div4 p,
+    .div5 p {
+        font-size: 11px;
+    }
+
+
+    .div1 p,
+    .div2 p,
+    .div3 p {
+        font-size: 10px;
+
+    }
+}
+
+
+.footer {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+    background-color: #5DAA68;
+    color: burlywood;
+    text-align: center;
+    width: 100%;
+    height: 10vh;
+    line-height: 10vh;
+}
+
+/*section on the menu*/
+.home-link,
+.hobbies-link {
+    color: #333;
+    
+    text-decoration: none;
+    
+    padding: 10px 20px;
+    
+    margin: 0 10px;
+    
+    font-weight: bold;
+    
+    transition: all 0.3s ease;
+    
+}
+
+/* CSS for hover effect on Home and Hobby links */
+.home-link:hover,
+.hobbies-link:hover {
+    background-color: #ddd;
+    /* Background color on hover */
+    color: #333;
+    /* Text color on hover */
+    border-radius: 5px;
+    /* Rounded corners on hover */
+}
+
+/*add a responsive design that change the img size when hover*/
+.image-container {
+    overflow: hidden;
+    /* Hide overflowing content */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+
+}
+
+.image-container img:hover {
+    transform: scale(1.1);
+    /* Increase the size of the image on hover */
+}
+
+/*.transparent-image{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.transparent-image img{
+    max-height: 10vh;
+    width: 100%; 
+    height: auto; 
+}*/
+
+/*by default only show the home page section*/
+#hobbies {
+    display: none;
+}

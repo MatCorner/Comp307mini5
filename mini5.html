@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mini5.css">
+    <title>Home Page</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Introduction to Daiyu</h1>
+    </div>
+
+    <div class="topnav">
+        <div class="icon" onclick="toggleMenu();">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div id="menu" class="menu">
+            <a href="#home" class="home-link">Home</a>
+            <a href="#hobbies" class="hobbies-link">Hobby</a>
+        </div>
+        <div id="dropdown-menu" class="dropdown-menu">
+            <a href="#home" class="home-link" onclick="navigateTo('home');">Home</a>
+            <a href="#hobbies" class="hobbies-link" onclick="navigateTo('hobbies');">Hobby</a>
+        </div>
+
+    </div>
+
+
+    <section id="home">
+        <div class="flex-container">
+            <div class="div1">
+                <h><b>Name:Daiyu Lin</b><br></h>
+	<p><b>Student of Yucun Jia</b><br><br></p>
+                <p><b>Skills:<br></b>1.Upside-down Hanging Willow.<br></p>
+<p>2.Breaking the large stone with my chest (Chinese traditional martial art)<br></p>
+<p>3.Buddha's Palm (Chinese traditional martial art)<br><br></p>
+
+<img style="padding:10px; height:50%; width:39%;" src="cartoon_person.jpg" alt="cartoon-person">
+            
+
+</div> 
+            <div class="div2">
+                <p><b>Who is She</b><br></p>
+                <p> One of the principal characters of Cao Xueqin's classic 18th-century Chinese novel Dream of the Red Chamber. She is portrayed as a well-educated, intelligent, witty and beautiful young woman of physical frailness who is somewhat prone to occasional melancholy. The love triangle between Daiyu, Jia Baoyu and Xue Baochai forms one of the main threads of the book.<br><br></p>
+            
+                <p><b>Personal Background</b><br></p>
+                <p>Born to a Suzhou scholar-official, Lin Ruhai, and Lady Jia Min of the Rongguo house, Daiyu was raised by her parents in her family's mansion in nearby Yangzhou, where she received an excellent education. She has a natural affinity for literature and learns exceptionally well.Her childhood tutor is Jia Yucun<br><br></p>
+            
+                <p><b>Personality</b><br></p>
+                <p>Daiyu is an emotional girl, prone to extreme mood swings and melancholic spells. She is described as having been sickly since childhood; indeed, when she is first introduced, a couplet describes her "with a heart like Bi Gan's, yet even more intelligent; and with an illness like Xi Zi, yet even more beautiful". Her disposition to frowning leads Baoyu to give her the courtesy name of Pin'pin or Frowner, when they first meet.<br><br></p>
+
+		<p><b>Anecdote</b><br></p>
+                <p>One of the enduring images of Daiyu, often portrayed in Chinese art and re-enacted in Chinese operas, is "Daiyu burying the flowers" Overcome by a spell of melancholy after a misunderstanding with Baoyu, Daiyu goes to the garden to bury fallen petals at a hillside, wrapping them in silk to keep them pure, and falls in deep weeping at their (and her own) transience. She composed an elegiac ballad for the dead petals, which evokes a sympathetic response in the eavesdropping Baoyu.
+</p>
+            
+
+</div>
+
+	<div class="div3">
+<img style="padding:10px; height:90%; width:100%;" src="daiyuzanghua.jpg" alt="daiyuzanghua">
+	<p style="margin-left:80px; font-size:10px;"> Daiyu burying the flower </p>
+</div>
+		
+
+        </div>
+    </section>
+
+    <section id="hobbies">
+        <div class="flex-container" >
+        <div class="div4"style="background-color:#C39EA0; color:#F8E5E5;">
+            <h>Bury the Flowers</h>
+            <div class="image-container"><img style="height:50%; width:39%;" src="buryingFlower.jpg" alt="buryingFlower"></div>
+            <p> 
+                She is talented and witty and is an enormously sympathetic character, 
+                and readers and viewers for more than two centuries have regretted the impossibility of her union with Baoyu.
+                In the image above, we see Daiyu burying flowers. She fears that the flowers will become spoiled, 
+                and so she collects them and places them in a silk bag to bury.  
+                In chapter 27 she composes a sequence of poems on burying the flowers: <br>
+                <b>Willow floss and elm-tree seeds  are fragrant on their own; <br>
+                No need to fret that peach blossoms blow  and pear blossoms fly away. <br>
+                For peach and pear the coming year  are able to bloom again; <br>
+                But next year within her chamber – who will be there then? <br></b>
+            </p>
+        </div>    
+        <div class="div5" style="background-color:#F8E5E5; color:#C39EA0;">
+            <h>Compose the Poems<br></h>
+            <p><br>On August 21st, in the Grand View Garden, the Hai Tang Poetry Society was established. 
+                Lin Daiyu was given the alias "Xiao Xiang Fei Zi" (Princess of Xiaoxiang). On that day, 
+                they composed poems about plum blossoms in Tan Chun's Qiu Shuang Chamber. Everyone voted Lin Daiyu's poem as the best. 
+                Li Wan praised Lin Daiyu's poem as "elegant and unique" On the 23rd, they all gathered in the Lotus Fragrance Pavilion to compose chrysanthemum poems. 
+                Lin Daiyu's three poems, "Ode to Chrysanthemums," "Inquiry About Chrysanthemums," and "Chrysanthemum Dream," took the top three positions, leading the competition.</p>
+                <div class="image-container"><img style="height:50%; width:39%;" src="shisheduokui.jpg" alt="shisheduokui"></div>
+                
+        </div>
+        
+        
+        </div>
+
+	<!--<div class="transparent-image">
+            <img src="huaban.jpg" alt="huaban">
+        </div>-->
+    </section>
+
+    <div class="footer">
+        <p>&copy; 2023 My Personal Website. All rights reserved.</p>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("dropdown-menu").classList.toggle("show");
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const homeSection = document.getElementById('home');
+            const hobbiesSection = document.getElementById('hobbies');
+		homeSection.style.display = 'block';
+            const homeLink = document.querySelector('.home-link');
+            const hobbiesLink = document.querySelector('.hobbies-link');
+
+            homeLink.addEventListener('click', function(event) {
+		event.preventDefault();
+                homeSection.style.display = 'block';
+                hobbiesSection.style.display = 'none';
+            });
+
+            hobbiesLink.addEventListener('click', function(event) {
+		event.preventDefault();
+                homeSection.style.display = 'none';
+                hobbiesSection.style.display = 'block';
+            });
+        });
+
+        function navigateTo(sectionId) {
+    const homeSection = document.getElementById('home');
+    const hobbiesSection = document.getElementById('hobbies');
+
+    if (sectionId === 'home') {
+        homeSection.style.display = 'block';
+        hobbiesSection.style.display = 'none';
+    } else if (sectionId === 'hobbies') {
+        homeSection.style.display = 'none';
+        hobbiesSection.style.display = 'block';
+    }
+
+    homeSection.scrollIntoView({ behavior: 'smooth' });
+    toggleMenu(); // Close the dropdown menu after clicking a link
+}
+
+
+
+    </script>
+</body>
+
+
+
+</html>

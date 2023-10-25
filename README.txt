@@ -1,0 +1,1 @@
+I use Microsoft Edge. The phone size I use is 600 px instead of around 400px because on my computer, the smallest screen size is 600px.
